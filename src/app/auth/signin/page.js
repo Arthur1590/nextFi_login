@@ -54,7 +54,7 @@ export default function LogIn() {
 			<form className='form' onSubmit={e => e.preventDefault()}>
 				<input
 					type='text'
-					placeholder='E-mail'
+					placeholder={mode === 'email' ? 'E-mail' : 'Phome number'}
 					onChange={handleInputOneChange}
 					className={inputOneClass}
 				/>
